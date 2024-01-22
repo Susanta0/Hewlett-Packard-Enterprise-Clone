@@ -48,7 +48,8 @@ solutionsLink.appendChild(span1)
 // solutions dropdown menu
 let soluDiv = document.createElement("div");
 soluDiv.id = "soluContainer"
-// /*
+
+//* First
 //! here three div inside of soluDiv
 const div1 = document.createElement("div");
 div1.className = "soluDropDownDiv1"
@@ -68,15 +69,57 @@ div1P.appendChild(rightSideIcon)
 // append all the content inside the div1
 div1.append(div1H4, div1P)
 
-// */
+//* Second 
 const div2 = document.createElement("div");
 div2.className = "soluDropDownDiv2"
+//! Edge section
+const edgeDiv = document.createElement("div")
+edgeDiv.className="EdgeDiv"
 
+const edgeName =document.createElement("p")
+edgeName.textContent="Edge"
+const hr1 =document.createElement("hr")
+const edgeTitle = document.createElement("p")
+edgeTitle.textContent="Connect your edge"
+const edgeDiscription=document.createElement("p")
+edgeDiscription.textContent="Control and harness data across edge to cloud."
+edgeDiv.append(edgeName, hr1, edgeTitle, edgeDiscription)
+
+//! Ai section
+const aiDiv = document.createElement("div")
+aiDiv.className="aiDiv"
+
+const aiName =document.createElement("p")
+aiName.textContent="AI"
+const hr2 =document.createElement("hr")
+const aiTitle = document.createElement("p")
+aiTitle.textContent="Make AI work for you"
+const aiDiscription=document.createElement("p")
+aiDiscription.textContent="Create your AI advantage by unlocking the full potential of your data."
+aiDiv.append(aiName, hr2, aiTitle, aiDiscription)
+
+//! Security section
+const securityDiv = document.createElement("div")
+securityDiv.className="securityDiv"
+
+const securityName =document.createElement("p")
+securityName.textContent="Security"
+const hr3 =document.createElement("hr")
+const securityTitle = document.createElement("p")
+securityTitle.textContent="Secure your data"
+const securityDiscription=document.createElement("p")
+securityDiscription.textContent="Only the rightlevel of security will do."
+securityDiv.append(securityName, hr3, securityTitle, securityDiscription)
+
+
+div2.append(edgeDiv, aiDiv, securityDiv)
 const div3 = document.createElement("div");
 div3.className = "soluDropDownDiv3"
 
+// const div4 = document.createElement("div");
+// div4.className = "soluDropDownDiv4"
 
-// div1,div2,div3 has inside the soluDiv
+// div1,div2,div3,div4 has inside the soluDiv
 soluDiv.append(div1, div2, div3)
 
 // soluDiv have inside the solutionsKink 

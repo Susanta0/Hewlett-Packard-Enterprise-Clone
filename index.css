@@ -35,7 +35,7 @@
     line-height: 7px;
 }
     
-#navBar a{
+#navBar>a{
     margin: 0px 4px;
     font-weight: 600;
     font-size: 14px;
@@ -44,11 +44,11 @@
     padding: 5px 10px;
     border-radius: 50px;
 }
-#navBar a:hover{
+#navBar>a:hover{
     background-color: #F5F5F5;
 }
 
-#navBar a span{
+#navBar>a>span{
     width: fit-content;
     margin: 0px 0px 0px 5px;
     display: inline-flex;
@@ -67,8 +67,8 @@
     margin: auto;
     cursor: pointer;
     display: grid;
-    grid-template-columns: 20% 40% 40%;
-    gap: 10px;
+    grid-template-columns: 20% 56% 22% ;
+    gap: 1%;
     padding: 15px 20px;
     /* display: none; */
     /* background-color: green; */
@@ -78,31 +78,36 @@
 #soluContainer>div{
     border: 1px solid;
 }
-.soluDropDownDiv1 h4{
+.soluDropDownDiv1>h4{
     font-size: 24px;
     font-weight: 600;
 }
-.soluDropDownDiv1 p{
-    font-size: 19px;
+.soluDropDownDiv1>p{
+    font-size: 18px;
     margin: 8px 0px;
     color: #01AF85;
     border: 1px solid;
     
 }
-.soluDropDownDiv1 p span{
-    border: 1px solid;
-    font-size: 15px;
+.soluDropDownDiv1>p>span{
+    font-size: 14px;
+    margin: 0em 0em 0em .4em;
+    transition: transform 0.5s;
 }
 
 /* #solutions:hover #soluContainer{
     display: block;
 } */
-.soluDropDownDiv1 p:hover span{
-    margin-left: 15px;
-    background-color: red;
+.soluDropDownDiv1>p:hover span{
+    /* margin-left: 15px; */
+    /* padding: 0em 0em 0em .5em; */
+    transform: translateX(5px);
+    transition: transform .8s;
 }
 
-
+.soluDropDownDiv2>div{
+border: 1px solid;
+}
 
 
 
