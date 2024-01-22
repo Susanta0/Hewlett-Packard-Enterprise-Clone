@@ -77,49 +77,120 @@ const edgeDiv = document.createElement("div")
 edgeDiv.className="EdgeDiv"
 
 const edgeName =document.createElement("p")
+edgeName.className="edgeName"
 edgeName.textContent="Edge"
 const hr1 =document.createElement("hr")
+hr1.className="hr1"
 const edgeTitle = document.createElement("p")
 edgeTitle.textContent="Connect your edge"
+edgeTitle.className="edgeTitle"
+const rightSideIcon2 = document.createElement("span")
+rightSideIcon2.className = "fa-solid fa-arrow-right"
+rightSideIcon2.id="rightSideIcon2"
+edgeTitle.appendChild(rightSideIcon2)
+
 const edgeDiscription=document.createElement("p")
+edgeDiscription.className="edgeDiscription"
 edgeDiscription.textContent="Control and harness data across edge to cloud."
 edgeDiv.append(edgeName, hr1, edgeTitle, edgeDiscription)
+
+//! Data section
+const dataDiv = document.createElement("div")
+dataDiv.className="dataDiv"
+
+const dataName =document.createElement("p")
+dataName.className="dataName"
+dataName.textContent="Data"
+const hr2 =document.createElement("hr")
+hr2.className="hr2"
+const dataTitle = document.createElement("p")
+dataTitle.className="dataTitle"
+dataTitle.textContent="Turn your data into intelligence"
+const rightSideIcon3 = document.createElement("span")
+rightSideIcon3.className = "fa-solid fa-arrow-right"
+rightSideIcon3.id="rightSideIcon3"
+dataTitle.appendChild(rightSideIcon3)
+
+const dataDiscription=document.createElement("p")
+dataDiscription.className="dataDiscription"
+dataDiscription.textContent="A single source of truth from data to make smart decisions and recommendations to customers."
+dataDiv.append(dataName, hr2, dataTitle, dataDiscription)
 
 //! Ai section
 const aiDiv = document.createElement("div")
 aiDiv.className="aiDiv"
 
 const aiName =document.createElement("p")
+aiName.className="aiName"
 aiName.textContent="AI"
-const hr2 =document.createElement("hr")
+const hr3 =document.createElement("hr")
+hr3.className="hr3"
 const aiTitle = document.createElement("p")
+aiTitle.className="aiTitle"
 aiTitle.textContent="Make AI work for you"
+const rightSideIcon4 = document.createElement("span")
+rightSideIcon4.className = "fa-solid fa-arrow-right"
+rightSideIcon4.id="rightSideIcon4"
+aiTitle.appendChild(rightSideIcon4)
+
 const aiDiscription=document.createElement("p")
+aiDiscription.className="aiDiscription"
 aiDiscription.textContent="Create your AI advantage by unlocking the full potential of your data."
-aiDiv.append(aiName, hr2, aiTitle, aiDiscription)
+aiDiv.append(aiName, hr3, aiTitle, aiDiscription)
+
+
+//! Cloud section
+const cloudDiv = document.createElement("div")
+cloudDiv.className="cloudDiv"
+
+const cloudName =document.createElement("p")
+cloudName.className="cloudName"
+cloudName.textContent="Cloud"
+const hr5 =document.createElement("hr")
+hr5.className="hr5"
+const cloudTitle = document.createElement("p")
+cloudTitle.className="cloudTitle"
+cloudTitle.textContent="Create your hybrid cloud"
+const rightSideIcon5 = document.createElement("span")
+rightSideIcon5.className = "fa-solid fa-arrow-right"
+rightSideIcon5.id="rightSideIcon5"
+cloudTitle.appendChild(rightSideIcon5)
+const cloudDiscription=document.createElement("p")
+cloudDiscription.className="cloudDiscription"
+cloudDiscription.textContent="Hybrid cloud, just the way you need it."
+cloudDiv.append(cloudName, hr5, cloudTitle, cloudDiscription)
 
 //! Security section
 const securityDiv = document.createElement("div")
 securityDiv.className="securityDiv"
 
 const securityName =document.createElement("p")
+securityName.className="securityName"
 securityName.textContent="Security"
-const hr3 =document.createElement("hr")
+const hr6 =document.createElement("hr")
+hr6.className="hr6"
 const securityTitle = document.createElement("p")
+securityTitle.className="securityTitle"
 securityTitle.textContent="Secure your data"
+const rightSideIcon6 = document.createElement("span")
+rightSideIcon6.className = "fa-solid fa-arrow-right"
+rightSideIcon6.id="rightSideIcon6"
+securityTitle.appendChild(rightSideIcon6)
 const securityDiscription=document.createElement("p")
+securityDiscription.className="securityDiscription"
 securityDiscription.textContent="Only the rightlevel of security will do."
-securityDiv.append(securityName, hr3, securityTitle, securityDiscription)
+securityDiv.append(securityName, hr6, securityTitle, securityDiscription)
 
 
-div2.append(edgeDiv, aiDiv, securityDiv)
+div2.append(edgeDiv, dataDiv, aiDiv, cloudDiv, securityDiv)
+
+//? next work will start from here
 const div3 = document.createElement("div");
 div3.className = "soluDropDownDiv3"
 
-// const div4 = document.createElement("div");
-// div4.className = "soluDropDownDiv4"
 
-// div1,div2,div3,div4 has inside the soluDiv
+
+// div1,div2,div3, has inside the soluDiv
 soluDiv.append(div1, div2, div3)
 
 // soluDiv have inside the solutionsKink 
