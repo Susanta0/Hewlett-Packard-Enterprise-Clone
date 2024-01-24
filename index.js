@@ -187,8 +187,16 @@ div2.append(edgeDiv, dataDiv, aiDiv, cloudDiv, securityDiv)
 //? next work will start from here
 const div3 = document.createElement("div");
 div3.className = "soluDropDownDiv3"
+const allProduct = document.createElement("p")
+const h7= document.createElement("hr")
+const ul1= document.createElement("ul")
+const li1 = document.createElement("li")
+const li2 = document.createElement("li")
+const li3 = document.createElement("li")
+const li4 = document.createElement("li")
 
-
+ul1.append(li1, li2, li3, li4)
+div3.append(allProduct, h7, ul1)
 
 // div1,div2,div3, has inside the soluDiv
 soluDiv.append(div1, div2, div3)
