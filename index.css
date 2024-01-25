@@ -118,12 +118,13 @@
 }
 .EdgeDiv, .dataDiv , .aiDiv, .securityDiv, .cloudDiv{
     padding: 0em 0em 1.4em 0em;
+
 }
 .edgeName, .dataName, .aiName, .securityName, .cloudName{
     font-size: 1.1em;
     font-weight: 500;
 }
-.hr1, .hr2, .hr3, .hr4, .hr5{
+.hr1, .hr2, .hr3, .hr4, .hr5, .hr6{
     margin: .4em 1em 0em 0em;
     /* margin: 0em 1em 0em 0em; */
 }
@@ -133,7 +134,7 @@
     margin-top: .8em;
     cursor: pointer;
 }
-#rightSideIcon2, #rightSideIcon3, #rightSideIcon4, #rightSideIcon5, #rightSideIcon6{
+#rightSideIcon2, #rightSideIcon3, #rightSideIcon4, #rightSideIcon5, #rightSideIcon6, #rightSideIcon7, #rightSideIcon8, #rightSideIcon9, #rightSideIcon10{
     font-size: .8em;
     margin-left: .3em;
     transition: transform 0.5s;
@@ -160,7 +161,7 @@
 }
 
 .soluDropDownDiv3{
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 
@@ -174,3 +175,37 @@
     margin: 0px 20px;
 }
 
+.soluDropDownDiv3{
+    border: 1px solid;
+    padding: 0em 3em;
+}
+.allProduct{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.hr6{
+    margin: .4em 0em 0em 0em;
+    /* margin: 0em 1em 0em 0em; */
+}
+.ul1{
+    list-style: none;
+    margin-top: 1em;
+}
+.ul1>li{
+    margin-top: 1.2em;
+}
+.a1, .a2, .a3, .a4{
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px
+}
+/* hover section */
+.a1:hover #rightSideIcon7,
+.a2:hover #rightSideIcon8,
+.a3:hover #rightSideIcon9,
+.a4:hover #rightSideIcon10{
+    content-visibility: visible;
+    transform: translateX(7px);
+    transition: transform 0.9s;
+}

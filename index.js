@@ -146,8 +146,8 @@ cloudDiv.className="cloudDiv"
 const cloudName =document.createElement("p")
 cloudName.className="cloudName"
 cloudName.textContent="Cloud"
-const hr5 =document.createElement("hr")
-hr5.className="hr5"
+const hr4 =document.createElement("hr")
+hr4.className="hr4"
 const cloudTitle = document.createElement("p")
 cloudTitle.className="cloudTitle"
 cloudTitle.textContent="Create your hybrid cloud"
@@ -158,7 +158,7 @@ cloudTitle.appendChild(rightSideIcon5)
 const cloudDiscription=document.createElement("p")
 cloudDiscription.className="cloudDiscription"
 cloudDiscription.textContent="Hybrid cloud, just the way you need it."
-cloudDiv.append(cloudName, hr5, cloudTitle, cloudDiscription)
+cloudDiv.append(cloudName, hr4, cloudTitle, cloudDiscription)
 
 //! Security section
 const securityDiv = document.createElement("div")
@@ -167,8 +167,8 @@ securityDiv.className="securityDiv"
 const securityName =document.createElement("p")
 securityName.className="securityName"
 securityName.textContent="Security"
-const hr6 =document.createElement("hr")
-hr6.className="hr6"
+const hr5 =document.createElement("hr")
+hr5.className="hr5"
 const securityTitle = document.createElement("p")
 securityTitle.className="securityTitle"
 securityTitle.textContent="Secure your data"
@@ -179,7 +179,7 @@ securityTitle.appendChild(rightSideIcon6)
 const securityDiscription=document.createElement("p")
 securityDiscription.className="securityDiscription"
 securityDiscription.textContent="Only the rightlevel of security will do."
-securityDiv.append(securityName, hr6, securityTitle, securityDiscription)
+securityDiv.append(securityName, hr5, securityTitle, securityDiscription)
 
 
 div2.append(edgeDiv, dataDiv, aiDiv, cloudDiv, securityDiv)
@@ -188,15 +188,58 @@ div2.append(edgeDiv, dataDiv, aiDiv, cloudDiv, securityDiv)
 const div3 = document.createElement("div");
 div3.className = "soluDropDownDiv3"
 const allProduct = document.createElement("p")
-const h7= document.createElement("hr")
+allProduct.className="allProduct"
+allProduct.textContent="All products and solutions"
+const hr6= document.createElement("hr")
+hr6.className="hr6"
 const ul1= document.createElement("ul")
+ul1.className="ul1"
 const li1 = document.createElement("li")
+li1.className="li1"
+const a1 = document.createElement("a")
+a1.className="a1"
+a1.textContent="Product types"
+const rightSideIcon7 = document.createElement("span")
+rightSideIcon7.className = "fa-solid fa-arrow-right"
+rightSideIcon7.id="rightSideIcon7"
+a1.append(rightSideIcon7)
+li1.append(a1)
+
 const li2 = document.createElement("li")
+li2.className="li2"
+const a2 = document.createElement("a")
+a2.className="a2"
+a2.textContent="Solutions by topic"
+const rightSideIcon8 = document.createElement("span")
+rightSideIcon8.className = "fa-solid fa-arrow-right"
+rightSideIcon8.id="rightSideIcon8"
+a2.append(rightSideIcon8)
+li2.append(a2)
+
 const li3 = document.createElement("li")
+li3.className="li3"
+const a3 = document.createElement("a")
+a3.className="a3"
+a3.textContent="Industries"
+const rightSideIcon9 = document.createElement("span")
+rightSideIcon9.className = "fa-solid fa-arrow-right"
+rightSideIcon9.id="rightSideIcon9"
+a3.append(rightSideIcon9)
+li3.append(a3)
+
 const li4 = document.createElement("li")
+li4.className="li4"
+const a4 = document.createElement("a")
+a4.className="a4"
+a4.textContent="See all"
+const rightSideIcon10 = document.createElement("span")
+rightSideIcon10.className = "fa-solid fa-arrow-right"
+rightSideIcon10.id="rightSideIcon10"
+a4.append(rightSideIcon10)
+li4.append(a4)
 
 ul1.append(li1, li2, li3, li4)
-div3.append(allProduct, h7, ul1)
+div3.append(allProduct, hr6, ul1)
 
 // div1,div2,div3, has inside the soluDiv
 soluDiv.append(div1, div2, div3)
