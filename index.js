@@ -38,7 +38,7 @@ const hpeLink = document.createElement("a");
 hpeLink.id = "HPE";
 hpeLink.textContent = "HPE GreenLake";
 
-
+// NOTE Solutions Dropdown
 const solutionsLink = document.createElement("a");
 solutionsLink.id = "solutions";
 solutionsLink.textContent = "Solutions";
@@ -49,11 +49,9 @@ solutionsLink.appendChild(span1)
 let soluDiv = document.createElement("div");
 soluDiv.id = "soluContainer"
 
-//* First
-//! here three div inside of soluDiv
+//? Your open and secure edge-to-cloud platform that powers data-first modernization (section)..............
 const div1 = document.createElement("div");
 div1.className = "soluDropDownDiv1"
-//* here is all content inside div1
 const div1H4 = document.createElement("h4");
 div1H4.id = "div1H4"
 div1H4.textContent = "Your open and secure edge-to-cloud platform that powers data-first modernization"
@@ -69,7 +67,7 @@ div1P.appendChild(rightSideIcon)
 // append all the content inside the div1
 div1.append(div1H4, div1P)
 
-//* Second 
+//? edge data ai cloud security (section)..................................................................
 const div2 = document.createElement("div");
 div2.className = "soluDropDownDiv2"
 //! Edge section
@@ -181,10 +179,9 @@ securityDiscription.className="securityDiscription"
 securityDiscription.textContent="Only the rightlevel of security will do."
 securityDiv.append(securityName, hr5, securityTitle, securityDiscription)
 
-
 div2.append(edgeDiv, dataDiv, aiDiv, cloudDiv, securityDiv)
 
-//? next work will start from here
+//? All products and solutions (secion)........................................................
 const div3 = document.createElement("div");
 div3.className = "soluDropDownDiv3"
 const allProduct = document.createElement("p")
@@ -247,7 +244,7 @@ soluDiv.append(div1, div2, div3)
 // soluDiv have inside the solutionsKink 
 solutionsLink.appendChild(soluDiv)
 
-
+// ANCHOR Product Dropdown
 const productsLink = document.createElement("a");
 productsLink.id = "products";
 productsLink.textContent = "Products";
@@ -255,11 +252,353 @@ let span2 = document.createElement("span")
 span2.className ="fa-solid fa-angle-down"
 productsLink.appendChild(span2)
 
+const proDiv = document.createElement("div")
+proDiv.className="proContainer"
 
+const proDropFistContainer1 = document.createElement("div")
+proDropFistContainer1.className="proDropFistContainer1"
+const edge_cloud = document.createElement("div")
+edge_cloud.className="edge_cloud"
+const edge_cloud_name = document.createElement("p")
+edge_cloud_name.id="edge_cloud_name"
+edge_cloud_name.textContent="Edge-to-cloud platform"
+const edge_cloud_hr = document.createElement("hr")
+edge_cloud_hr.id="edge_cloud_hr"
+const edge_cloud_title = document.createElement("p")
+edge_cloud_title.id="edge_cloud_title"
+edge_cloud_title.textContent="HPE GreenLake"
+const edge_cloud_para = document.createElement("p")
+edge_cloud_para.id="edge_cloud_para"
+edge_cloud_para.textContent="Accelerate your data-first modernization with the HPE GreenLake edge-to-cloud platform, which brings the cloud to wherever your apps and data live."
+const edge_cloud_buttonDiv = document.createElement("div")
+edge_cloud_buttonDiv.className="edge_cloud_buttonDiv"
+const edge_cloud_buttonDiv_text = document.createElement("p")
+edge_cloud_buttonDiv_text.className="edge_cloud_buttonDiv_text"
+edge_cloud_buttonDiv_text.textContent="Explore HPE GreenLake"
+const edge_cloud_box = document.createElement("div")
+edge_cloud_box.className="edge_cloud_box"
+edge_cloud_buttonDiv.append(edge_cloud_buttonDiv_text, edge_cloud_box)
+
+edge_cloud.append(edge_cloud_name, edge_cloud_hr, edge_cloud_title, edge_cloud_para, edge_cloud_buttonDiv)
+
+//NOTE Products Types
+const product_types = document.createElement("div")
+product_types.className="product_types"
+const product_types_name = document.createElement("p")
+product_types_name.className="product_types_name"
+product_types_name.textContent="Product types"
+const product_types_hr = document.createElement("hr")
+product_types_hr.className="product_types_hr"
+
+const ul2 = document.createElement("ul")
+ul2.className="ul2"
+const ul2_li1 = document.createElement("li")
+ul2_li1.className="ul2_li1"
+const ul2_li1_a1 = document.createElement("a")
+ul2_li1_a1.className="ul2_li1_a1"
+ul2_li1_a1.textContent="Supercomputing"
+ul2_li1.append(ul2_li1_a1)
+const rightSideIcon11 = document.createElement("span")
+rightSideIcon11.className = "fa-solid fa-arrow-right"
+rightSideIcon11.id="rightSideIcon11"
+ul2_li1_a1.append(rightSideIcon11)
+
+const ul2_li2 = document.createElement("li")
+ul2_li2.className="ul2_li2"
+const ul2_li1_a2 = document.createElement("a")
+ul2_li1_a2.className="ul2_li1_a2"
+ul2_li1_a2.textContent="Compute"
+ul2_li2.append(ul2_li1_a2)
+const rightSideIcon12 = document.createElement("span")
+rightSideIcon12.className = "fa-solid fa-arrow-right"
+rightSideIcon12.id="rightSideIcon12"
+ul2_li1_a2.append(rightSideIcon12)
+
+
+const ul2_li3 = document.createElement("li")
+ul2_li3.className="ul2_li3"
+const ul2_li1_a3 = document.createElement("a")
+ul2_li1_a3.className="ul2_li1_a3"
+ul2_li1_a3.textContent="Storage"
+ul2_li3.append(ul2_li1_a3)
+const rightSideIcon13 = document.createElement("span")
+rightSideIcon13.className = "fa-solid fa-arrow-right"
+rightSideIcon13.id="rightSideIcon13"
+ul2_li1_a3.append(rightSideIcon13)
+
+
+const ul2_li4 = document.createElement("li")
+ul2_li4.className="ul2_li4"
+const ul2_li1_a4 = document.createElement("a")
+ul2_li1_a4.className="ul2_li1_a4"
+ul2_li1_a4.textContent="Networking"
+ul2_li4.append(ul2_li1_a4)
+const rightSideIcon14 = document.createElement("span")
+rightSideIcon14.className = "fa-solid fa-arrow-right"
+rightSideIcon14.id="rightSideIcon14"
+ul2_li1_a4.append(rightSideIcon14)
+
+const ul2_li5 = document.createElement("li")
+ul2_li5.className="ul2_li5"
+const ul2_li1_a5 = document.createElement("a")
+ul2_li1_a5.className="ul2_li1_a5"
+ul2_li1_a5.textContent="Software"
+ul2_li5.append(ul2_li1_a5)
+const rightSideIcon15 = document.createElement("span")
+rightSideIcon15.className = "fa-solid fa-arrow-right"
+rightSideIcon15.id="rightSideIcon15"
+ul2_li1_a5.append(rightSideIcon15)
+
+const ul2_li6 = document.createElement("li")
+ul2_li6.className="ul2_li6"
+const ul2_li1_a6 = document.createElement("a")
+ul2_li1_a6.className="ul2_li1_a6"
+ul2_li1_a6.textContent="Services"
+ul2_li6.append(ul2_li1_a6)
+const rightSideIcon16 = document.createElement("span")
+rightSideIcon16.className = "fa-solid fa-arrow-right"
+rightSideIcon16.id="rightSideIcon16"
+ul2_li1_a6.append(rightSideIcon16)
+
+
+ul2.append(ul2_li1, ul2_li2, ul2_li3, ul2_li4, ul2_li5, ul2_li6)
+product_types.append(product_types_name, product_types_hr, ul2)
+
+// NOTE Products Brands
+const product_brands = document.createElement("div")
+product_brands.className="product_brands"
+
+const product_brands_name = document.createElement("p")
+product_brands_name.className="product_brands_name"
+product_brands_name.textContent="Product brands"
+const product_brands_hr = document.createElement("hr")
+product_brands_hr.className="product_brands_hr"
+
+const ul3 = document.createElement("ul")
+ul3.className="ul3"
+const ul3_li1 = document.createElement("li")
+ul3_li1.className="ul3_li1"
+const ul3_li1_a1 = document.createElement("a")
+ul3_li1_a1.className="ul3_li1_a1"
+ul3_li1_a1.textContent="HPE Cray Supercomputing"
+ul3_li1.append(ul3_li1_a1)
+const rightSideIcon17 = document.createElement("span")
+rightSideIcon17.className = "fa-solid fa-arrow-right"
+rightSideIcon17.id="rightSideIcon17"
+ul3_li1_a1.append(rightSideIcon17)
+
+const ul3_li2 = document.createElement("li")
+ul3_li2.className="ul3_li2"
+const ul3_li1_a2 = document.createElement("a")
+ul3_li1_a2.className="ul3_li1_a2"
+ul3_li1_a2.textContent="HPE ProLiant Compute"
+ul3_li2.append(ul3_li1_a2)
+const rightSideIcon18 = document.createElement("span")
+rightSideIcon18.className = "fa-solid fa-arrow-right"
+rightSideIcon18.id="rightSideIcon18"
+ul3_li1_a2.append(rightSideIcon18)
+
+
+const ul3_li3 = document.createElement("li")
+ul3_li3.className="ul3_li3"
+const ul3_li1_a3 = document.createElement("a")
+ul3_li1_a3.className="ul3_li1_a3"
+ul3_li1_a3.textContent="HPE Alletra Storage"
+ul3_li3.append(ul3_li1_a3)
+const rightSideIcon19 = document.createElement("span")
+rightSideIcon19.className = "fa-solid fa-arrow-right"
+rightSideIcon19.id="rightSideIcon19"
+ul3_li1_a3.append(rightSideIcon19)
+
+
+const ul3_li4 = document.createElement("li")
+ul3_li4.className="ul3_li4"
+const ul3_li1_a4 = document.createElement("a")
+ul3_li1_a4.className="ul3_li1_a4"
+ul3_li1_a4.textContent="HPE Aruba Networking"
+ul3_li4.append(ul3_li1_a4)
+const rightSideIcon20 = document.createElement("span")
+rightSideIcon20.className = "fa-solid fa-arrow-right"
+rightSideIcon20.id="rightSideIcon20"
+ul3_li1_a4.append(rightSideIcon20)
+
+const ul3_li5 = document.createElement("li")
+ul3_li5.className="ul3_li5"
+const ul3_li1_a5 = document.createElement("a")
+ul3_li1_a5.className="ul3_li1_a5"
+ul3_li1_a5.textContent="HPE Ezmeral Software"
+ul3_li5.append(ul3_li1_a5)
+const rightSideIcon21 = document.createElement("span")
+rightSideIcon21.className = "fa-solid fa-arrow-right"
+rightSideIcon21.id="rightSideIcon21"
+ul3_li1_a5.append(rightSideIcon21)
+
+const ul3_li6 = document.createElement("li")
+ul3_li6.className="ul3_li6"
+const ul3_li1_a6 = document.createElement("a")
+ul3_li1_a6.className="ul3_li1_a6"
+ul3_li1_a6.textContent="HPE Services"
+ul3_li6.append(ul3_li1_a6)
+const rightSideIcon22 = document.createElement("span")
+rightSideIcon22.className = "fa-solid fa-arrow-right"
+rightSideIcon22.id="rightSideIcon22"
+ul3_li1_a6.append(rightSideIcon22)
+
+ul3.append(ul3_li1, ul3_li2, ul3_li3, ul3_li4, ul3_li5, ul3_li6)
+product_brands.append(product_brands_name, product_brands_hr, ul3)
+
+// NOTE Featured Products
+const featured_products = document.createElement("div")
+featured_products.className="featured_products"
+
+const featured_products_name = document.createElement("p")
+featured_products_name.className="featured_products_name"
+featured_products_name.textContent="Featured products"
+const featured_products_hr = document.createElement("hr")
+featured_products_hr.className="featured_products_hr"
+
+const ul4 = document.createElement("ul")
+ul4.className="ul4"
+const ul4_li1 = document.createElement("li")
+ul4_li1.className="ul4_li1"
+const ul4_li1_a1 = document.createElement("a")
+ul4_li1_a1.className="ul4_li1_a1"
+ul4_li1_a1.textContent="HPE GreenLake for Networking"
+ul4_li1.append(ul4_li1_a1)
+const rightSideIcon23 = document.createElement("span")
+rightSideIcon23.className = "fa-solid fa-arrow-right"
+rightSideIcon23.id="rightSideIcon23"
+ul4_li1_a1.append(rightSideIcon23)
+
+const ul4_li2 = document.createElement("li")
+ul4_li2.className="ul4_li2"
+const ul4_li1_a2 = document.createElement("a")
+ul4_li1_a2.className="ul4_li1_a2"
+ul4_li1_a2.textContent="HPE GreenLake for Block Storage"
+ul4_li2.append(ul4_li1_a2)
+const rightSideIcon24 = document.createElement("span")
+rightSideIcon24.className = "fa-solid fa-arrow-right"
+rightSideIcon24.id="rightSideIcon24"
+ul4_li1_a2.append(rightSideIcon24)
+
+
+const ul4_li3 = document.createElement("li")
+ul4_li3.className="ul4_li3"
+const ul4_li1_a3 = document.createElement("a")
+ul4_li1_a3.className="ul4_li1_a3"
+ul4_li1_a3.textContent="HPE GreenLake for Private Cloud Enterprise"
+ul4_li3.append(ul4_li1_a3)
+const rightSideIcon25 = document.createElement("span")
+rightSideIcon25.className = "fa-solid fa-arrow-right"
+rightSideIcon25.id="rightSideIcon25"
+ul4_li1_a3.append(rightSideIcon25)
+
+
+const ul4_li4 = document.createElement("li")
+ul4_li4.className="ul4_li4"
+const ul4_li1_a4 = document.createElement("a")
+ul4_li1_a4.className="ul4_li1_a4"
+ul4_li1_a4.textContent="HPE GreenLake for Compute Ops Management"
+ul4_li4.append(ul4_li1_a4)
+const rightSideIcon26 = document.createElement("span")
+rightSideIcon26.className = "fa-solid fa-arrow-right"
+rightSideIcon26.id="rightSideIcon26"
+ul4_li1_a4.append(rightSideIcon26)
+
+const ul4_li5 = document.createElement("li")
+ul4_li5.className="ul4_li5"
+const ul4_li1_a5 = document.createElement("a")
+ul4_li1_a5.className="ul4_li1_a5"
+ul4_li1_a5.textContent="HPE GreenLake for Disaster Recovery"
+ul4_li5.append(ul4_li1_a5)
+const rightSideIcon27 = document.createElement("span")
+rightSideIcon27.className = "fa-solid fa-arrow-right"
+rightSideIcon27.id="rightSideIcon27"
+ul4_li1_a5.append(rightSideIcon27)
+
+const ul4_li6 = document.createElement("li")
+ul4_li6.className="ul4_li6"
+const ul4_li1_a6 = document.createElement("a")
+ul4_li1_a6.className="ul4_li1_a6"
+ul4_li1_a6.textContent="HPE GreenLake for Backup and Recovery"
+ul4_li6.append(ul4_li1_a6)
+const rightSideIcon28 = document.createElement("span")
+rightSideIcon28.className = "fa-solid fa-arrow-right"
+rightSideIcon28.id="rightSideIcon28"
+ul4_li1_a6.append(rightSideIcon28)
+
+
+ul4.append(ul4_li1, ul4_li2, ul4_li3, ul4_li4, ul4_li5, ul4_li6)
+featured_products.append(featured_products_name, featured_products_hr, ul4)
+
+proDropFistContainer1.append(edge_cloud, product_types, product_brands, featured_products)
+
+
+//NOTE All products and solutions (secion)........................................................
+const proDropFistContainer2 = document.createElement("div");
+proDropFistContainer2.className = "proDropFistContainer2"
+const allProduct2 = document.createElement("p")
+allProduct2.className="allProduct2"
+allProduct2.textContent="All products and solutions"
+const allProduct2_hr= document.createElement("hr")
+allProduct2_hr.className="allProduct2_hr"
+const allProduct2_ul= document.createElement("ul")
+allProduct2_ul.className="allProduct2_ul"
+const allProduct2_li1 = document.createElement("li")
+allProduct2_li1.className="allProduct2_li1"
+const allProduct2_li1_a1 = document.createElement("a")
+allProduct2_li1_a1.className="allProduct2_li1_a1"
+allProduct2_li1_a1.textContent="Product types"
+const rightSideIcon29 = document.createElement("span")
+rightSideIcon29.className = "fa-solid fa-arrow-right"
+rightSideIcon29.id="rightSideIcon29"
+allProduct2_li1_a1.append(rightSideIcon29)
+allProduct2_li1.append(allProduct2_li1_a1)
+
+const allProduct2_li2 = document.createElement("li")
+allProduct2_li2.className="allProduct2_li2"
+const allProduct2_li1_a2 = document.createElement("a")
+allProduct2_li1_a2.className="allProduct2_li1_a2"
+allProduct2_li1_a2.textContent="Solutions by topic"
+const rightSideIcon30 = document.createElement("span")
+rightSideIcon30.className = "fa-solid fa-arrow-right"
+rightSideIcon30.id="rightSideIcon30"
+allProduct2_li1_a2.append(rightSideIcon30)
+allProduct2_li2.append(allProduct2_li1_a2)
+
+const allProduct2_li3 = document.createElement("li")
+allProduct2_li3.className="allProduct2_li3"
+const allProduct2_li1_a3 = document.createElement("a")
+allProduct2_li1_a3.className="allProduct2_li1_a3"
+allProduct2_li1_a3.textContent="Industries"
+const rightSideIcon31 = document.createElement("span")
+rightSideIcon31.className = "fa-solid fa-arrow-right"
+rightSideIcon31.id="rightSideIcon31"
+allProduct2_li1_a3.append(rightSideIcon31)
+allProduct2_li3.append(allProduct2_li1_a3)
+
+const allProduct2_li4 = document.createElement("li")
+allProduct2_li4.className="allProduct2_li4"
+const allProduct2_li1_a4 = document.createElement("a")
+allProduct2_li1_a4.className="allProduct2_li1_a4"
+allProduct2_li1_a4.textContent="See all"
+const rightSideIcon32 = document.createElement("span")
+rightSideIcon32.className = "fa-solid fa-arrow-right"
+rightSideIcon32.id="rightSideIcon32"
+allProduct2_li1_a4.append(rightSideIcon32)
+allProduct2_li4.append(allProduct2_li1_a4)
+
+allProduct2_ul.append(allProduct2_li1, allProduct2_li2, allProduct2_li3, allProduct2_li4)
+proDropFistContainer2.append(allProduct2, allProduct2_hr, allProduct2_ul)
+
+proDiv.append(proDropFistContainer1, proDropFistContainer2)
+productsLink.appendChild(proDiv)
+
+// NOTE Service Section.............................
 const servicesLink = document.createElement("a");
 servicesLink.id = "services";
 servicesLink.textContent = "Services";
-
+// NOTE Learn Section............................
 const learnLink = document.createElement("a");
 learnLink.id = "learn";
 learnLink.textContent = "Learn";
@@ -267,11 +606,12 @@ let span3 = document.createElement("span")
 span3.className ="fa-solid fa-angle-down"
 learnLink.appendChild(span3)
 
+// NOTE Support Section............................
 const supportLink = document.createElement("a");
 supportLink.id = "support";
 supportLink.textContent = "Support";
 
-
+// NOTE Contact Section............................
 const contactLink = document.createElement("a");
 contactLink.id = "contact";
 contactLink.textContent = "Contact";
