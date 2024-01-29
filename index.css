@@ -9,9 +9,9 @@
   list-style: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-body {
-  /* height: 1000px; */
-}
+/* body {
+  height: 1000px;
+} */
 #main {
   border-bottom-style: solid;
   border-bottom-color: #d6d4d4;
@@ -73,7 +73,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 60px;
+  top: 64px;
   width: 95%;
   margin: auto;
   cursor: default;
@@ -132,7 +132,11 @@ body {
 .product_types_name,
 .product_brands_name,
 .featured_products_name,
-.allProduct2 {
+.allProduct2,
+#aboutHpeName,
+#certificationName,
+#resourcesName,
+#gettingName {
   font-size: 1.1em;
   font-weight: 500;
 }
@@ -146,7 +150,11 @@ body {
 .product_types_hr,
 .product_brands_hr,
 .featured_products_hr,
-.allProduct2_hr {
+.allProduct2_hr,
+#aboutHpeHr,
+#certificationHr,
+#resourcesHr,
+#gettingHr {
   margin: 0.4em 1em 0em 0em;
 }
 .edgeTitle,
@@ -189,9 +197,26 @@ body {
 #rightSideIcon29,
 #rightSideIcon30,
 #rightSideIcon31,
-#rightSideIcon32 {
+#rightSideIcon32,
+#rightSideIcon33,
+#rightSideIcon34,
+#rightSideIcon35,
+#rightSideIcon36,
+#rightSideIcon37,
+#rightSideIcon38,
+#rightSideIcon39,
+#rightSideIcon40,
+#rightSideIcon41,
+#rightSideIcon42,
+#rightSideIcon42,
+#rightSideIcon43,
+#rightSideIcon44,
+#rightSideIcon45,
+#rightSideIcon46,
+#rightSideIcon47,
+#rightSideIcon48 {
   font-size: 0.8em;
-  margin-left: 0.3em;
+  margin-left: 0.4em;
   transition: transform 0.5s;
   content-visibility: hidden;
   color: var(--right-arrow-color--);
@@ -273,7 +298,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 60px;
+  top: 64px;
   width: 85%;
   margin: auto;
   cursor: default;
@@ -379,4 +404,87 @@ body {
   content-visibility: visible;
   transform: translateX(7px);
   transition: transform 0.9s;
+}
+
+/* learn css */
+#learnDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 64px;
+  width: 72%;
+  margin: auto;
+  cursor: default;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4em;
+  padding: 20px 22px;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  visibility: hidden;
+  transition: 0.2s;
+}
+#learn:hover #learnDiv {
+  visibility: visible;
+  transition: 1s;
+}
+#aboutHpeName {
+  font-size: 1em;
+}
+#aboutHpe > ul,
+#certification > ul,
+#resources > ul,
+#getting > ul {
+  margin: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#aboutHpeHr + ul > li,
+#certificationHr + ul > li,
+#resourcesHr + ul > li,
+#gettingHr + ul > li {
+  cursor: pointer;
+}
+#aboutHpeHr + ul > li:hover,
+#certificationHr + ul > li:hover,
+#resourcesHr + ul > li:hover,
+#gettingHr + ul > li:hover {
+  color: var(--right-arrow-color--);
+}
+
+#aboutHpeHr + ul > li > a,
+#certificationHr + ul > li > a,
+#resourcesHr + ul > li > a,
+#gettingHr + ul > li > a {
+  font-size: 16px;
+}
+
+#aboutHpeHr + ul > li:hover #rightSideIcon33,
+#aboutHpeHr + ul > li:hover #rightSideIcon34,
+#aboutHpeHr + ul > li:hover #rightSideIcon35,
+#aboutHpeHr + ul > li:hover #rightSideIcon36,
+#certificationHr + ul > li:hover #rightSideIcon37,
+#certificationHr + ul > li:hover #rightSideIcon38,
+#certificationHr + ul > li:hover #rightSideIcon39,
+#resourcesHr + ul > li:hover #rightSideIcon40,
+#resourcesHr + ul > li:hover #rightSideIcon41,
+#resourcesHr + ul > li:hover #rightSideIcon42,
+#resourcesHr + ul > li:hover #rightSideIcon43,
+#resourcesHr + ul > li:hover #rightSideIcon44,
+#gettingHr + ul > li:hover #rightSideIcon45,
+#gettingHr + ul > li:hover #rightSideIcon46,
+#gettingHr + ul > li:hover #rightSideIcon47,
+#gettingHr + ul > li:hover #rightSideIcon48 {
+  content-visibility: visible;
+  transform: translateX(7px);
+  transition: transform 0.9s;
+}
+
+/* slider css */
+.sliderDiv {
+  border: 1px solid;
+  height: 200px;
 }
