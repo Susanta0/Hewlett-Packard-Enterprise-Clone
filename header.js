@@ -871,3 +871,12 @@ signInButton.id = "signInButton";
 signInButton.textContent = "Sign In";
 iconDiv.append(search, bag, menu, global, signInButton);
 header.append(logoContainer, nav, iconDiv);
+
+
+
+
+
+
+
+// slider js
+import slider from "./slider";
