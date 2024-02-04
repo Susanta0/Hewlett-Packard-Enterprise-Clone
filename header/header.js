@@ -879,4 +879,4 @@ header.append(logoContainer, nav, iconDiv);
 
 
 // slider js
-import slider from "./slider";
+
