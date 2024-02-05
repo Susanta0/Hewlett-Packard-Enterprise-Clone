@@ -1,0 +1,63 @@
+:root {
+  --right-arrow-color--: #01af85;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#aboutSomeVideo {
+  display: flex;
+  padding: 5em;
+  gap: 2.2em;
+}
+#photodiv {
+  width: 100%;
+  height: 100%;
+}
+#photo {
+  width: 664px;
+}
+#aboutTextBold {
+  font-size: 2.3em;
+  font-weight: 900;
+}
+#aboutTextParagraph {
+  font-size: 1.3em;
+  margin: 0.4em 0em 0em 0em;
+}
+#videoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 1em 0em 0em 0em;
+  width: fit-content;
+}
+#aboutVideo1 {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: var(--right-arrow-color--);
+  cursor: pointer;
+  width: fit-content;
+}
+#aboutVideo2 {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: var(--right-arrow-color--);
+  cursor: pointer;
+}
+#aboutVideo1Icon {
+  margin-left: 0.4em;
+  transition: transform 0.5s;
+}
+#aboutVdeo2Icon {
+  margin-left: 0.4em;
+  transition: transform 0.5s;
+}
+#aboutVideo1:hover #aboutVideo1Icon,
+#aboutVideo2:hover #aboutVdeo2Icon {
+  transform: translateX(7px);
+  transition: transform 0.5s;
+}

@@ -876,7 +876,3 @@ header.append(logoContainer, nav, iconDiv);
 
 
 
-
-
-// slider js
-
