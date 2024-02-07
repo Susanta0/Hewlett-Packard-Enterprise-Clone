@@ -1,15 +1,35 @@
 :root {
-    --right-arrow-color--: #01af85;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  #customerStoriesContainer{
-    border: 1px solid greenyellow;
-    height: 300px;
-  }
+  --right-arrow-color--: #01af85;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#customerStoriesContainer {
+  border: 1px solid greenyellow;
+  height: auto;
+}
+#customerStoriesText {
+  font-size: 2.4em;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#customerCardContainer{
+  border: 2px solid;
+  padding: 2.5em 5em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+}
+.cardElement{
+  border: 1px solid;
+}
+.imageElement{
+  width: 339.8px;
+  height: 339.8px;
+}
