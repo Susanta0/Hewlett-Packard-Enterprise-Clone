@@ -17,19 +17,131 @@
   font-size: 2.4em;
   font-weight: 800;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-#customerCardContainer{
+#customerCardContainer {
   border: 2px solid;
   padding: 2.5em 5em;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-
+  grid-template-columns: repeat(2, 1fr);
 }
-.cardElement{
+.customerCardContainerSet {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  perspective: 900px;
+}
+.cardElement {
+  border: 1px solid;
+  text-align: center;
+  position: relative;
+  /* transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8); */
+  transition: all 0.5s cubic-bezier(0.07, -0.05, 1, 1.01);
+  transform-style: preserve-3d;
+  height: 100%;
+}
+.cardElement:hover {
+  transform: rotateY(180deg);
+}
+.cardElement2,
+.cardhover {
+  width: 339.8px;
+  position: relative;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.cardElement2 {
+  cursor: pointer;
+  height: 100%;
+  backface-visibility: hidden;
+  background-position: center;
+}
+.cardhover {
+  transform: rotateY(180deg);
+  position: absolute;
+  height: 100%;
+  padding: 0.7em;
+  cursor: pointer;
   border: 1px solid;
 }
-.imageElement{
+.customerCardContainerSet :nth-child(1) > .cardhover,
+:nth-child(3) > .cardhover,
+:nth-child(5) > .cardhover,
+:nth-child(7) > .cardhover {
+  background-color: #f6f6f6;
+}
+.customerCardContainerSet :nth-child(2) > .cardhover,
+:nth-child(4) > .cardhover,
+:nth-child(6) > .cardhover,
+:nth-child(8) > .cardhover {
+  background-color: #333333;
+}
+.imageElement {
   width: 339.8px;
   height: 339.8px;
+}
+.textA {
+  color: #fff;
+}
+.text1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.customerCardContainerSet :nth-child(1) > .cardhover > .textA > .text1,
+:nth-child(3) > .cardhover > .textA > .text1,
+:nth-child(5) > .cardhover > .textA > .text1,
+:nth-child(7) > .cardhover > .textA > .text1,
+:nth-child(9) > .cardhover > .textA > .text1 {
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+}
+.customerCardContainerSet :nth-child(2) > .cardhover > .textA > .text1,
+:nth-child(4) > .cardhover > .textA > .text1,
+:nth-child(6) > .cardhover > .textA > .text1,
+:nth-child(8) > .cardhover > .textA > .text1 {
+  font-size: 2em;
+  font-weight: 900;
+  color: #fff;
+}
+.customerCardContainerSet :nth-child(1) > .cardhover > .textA > .text2,
+:nth-child(3) > .cardhover > .textA > .text2,
+:nth-child(5) > .cardhover > .textA > .text2,
+:nth-child(7) > .cardhover > .textA > .text2,
+:nth-child(9) > .cardhover > .textA > .text2 {
+  font-size: 1.1em;
+  margin: 1em 0em;
+  line-height: 25px;
+  color: black;
+}
+.customerCardContainerSet :nth-child(2) > .cardhover > .textA > .text2,
+:nth-child(4) > .cardhover > .textA > .text2,
+:nth-child(6) > .cardhover > .textA > .text2,
+:nth-child(8) > .cardhover > .textA > .text2,
+:nth-child(10) > .cardhover > .textA > .text2 {
+  font-size: 1.1em;
+  margin: 1em 0em;
+  line-height: 25px;
+  color: #fff;
+}
+.videoLink1 {
+  font-size: 1.4em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  color: var(--right-arrow-color--);
+}
+.customerCardContainerSet :nth-child(1) > .cardhover > .textA > .videoLink1 {
+  border: 1px solid;
+  margin-top: 5em;
+  width: 100%;
+}
+#videoLinkIcon {
+  font-size: 0.8em;
+  margin-left: 0.3em;
+  transition: transform 0.5s;
+}
+.videoLink1:hover #videoLinkIcon {
+  transform: translateX(7px);
+  transition: transform 0.8s;
 }
