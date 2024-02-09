@@ -400,3 +400,7 @@ for (let i = 0; i < allCard.length; i++) {
   customerCardContainer.append(customerCardContainerSet)
   // customerStoriesContainer.append(customerCardContainerSet)
 };
+
+
+
+const dv1= document.createElement("")
